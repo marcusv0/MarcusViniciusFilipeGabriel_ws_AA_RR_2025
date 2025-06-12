@@ -116,7 +116,7 @@ gcc tabela_hash.c -o tabela_hash
 
 A altura de uma árvore Red-Black é no máximo 2 ⋅ log₂(n+1). Esse cálculo fundamenta-se nas propriedades estruturais da árvore e demonstra o balanceamento eficiente que garante a complexidade logarítmica.
 
-** Propriedades Fundamentais:
+**Propriedades Fundamentais**:
 
 * Altura preta: Todos os caminhos de um nó até suas folhas possuem o mesmo número de nós pretos.
 
@@ -128,7 +128,7 @@ Isso ocorre porque os nós vermelhos não podem ser consecutivos.
 O número mínimo de nós (n) para uma altura ℎᵦ é dado por:
 n ≥ 2^hᵦ - 1
 
-** Derivação:
+**Derivação**:
 
 * Relacionando ℎᵦ com o número de nós (n):
 hᵦ ≤ log₂(n+1)
@@ -136,12 +136,12 @@ hᵦ ≤ log₂(n+1)
 * Substituindo ℎᵦ na equação da altura total ℎ:
 h ≤ 2 ⋅ log₂(n+1)
 
-** Conclusão:
+**Conclusão**:
 A altura máxima ℎ de uma árvore Red-Black com n nós é:
 h ≤ 2 ⋅ log₂(n+1)
 Essa relação demonstra que a árvore está balanceada, garantindo a eficiência logarítmica nas operações de busca, inserção e remoção.
 
-** Aplicação no Projeto:
+**Aplicação no Projeto**:
 
 * A equação fundamentou a modelagem da complexidade da inserção e foi validada por experimentações práticas.
 
