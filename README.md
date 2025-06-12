@@ -61,7 +61,7 @@ A inserção em uma Red-Black Tree envolve dois passos: busca pela posição (se
 
 ---
 
-## **Apresentação de um algortimo mais eficiente, em termos de complexidade**
+## **Apresentação de um algoritmo mais eficiente, em termos de complexidade**
 
 ### Tabela hash: inserção com complexidade **O(1)** em média e **O(n)** no pior caso.
 
