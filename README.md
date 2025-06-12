@@ -116,24 +116,24 @@ gcc tabela_hash.c -o tabela_hash
 
 A altura de uma árvore Red-Black é no máximo 2 ⋅ log₂(n+1). Esse cálculo fundamenta-se nas propriedades estruturais da árvore e demonstra o balanceamento eficiente que garante a complexidade logarítmica.
 
-**Propriedades Fundamentais:
+** Propriedades Fundamentais:
 
-*Altura preta: Todos os caminhos de um nó até suas folhas possuem o mesmo número de nós pretos.
+* Altura preta: Todos os caminhos de um nó até suas folhas possuem o mesmo número de nós pretos.
 
-*Se a altura preta (ℎᵦ) de uma árvore é o número de nós pretos no caminho mais longo da raiz até qualquer folha, então:
+* Se a altura preta (ℎᵦ) de uma árvore é o número de nós pretos no caminho mais longo da raiz até qualquer folha, então:
 h ≤ 2 ⋅ hᵦ
 Isso ocorre porque os nós vermelhos não podem ser consecutivos.
 
-*Número mínimo de nós em uma Red-Black Tree:
+* Número mínimo de nós em uma Red-Black Tree:
 O número mínimo de nós (n) para uma altura ℎᵦ é dado por:
 n ≥ 2^hᵦ - 1
 
 ** Derivação:
 
-*Relacionando ℎᵦ com o número de nós (n):
+* Relacionando ℎᵦ com o número de nós (n):
 hᵦ ≤ log₂(n+1)
 
-*Substituindo ℎᵦ na equação da altura total ℎ:
+* Substituindo ℎᵦ na equação da altura total ℎ:
 h ≤ 2 ⋅ log₂(n+1)
 
 ** Conclusão:
@@ -143,11 +143,11 @@ Essa relação demonstra que a árvore está balanceada, garantindo a eficiênci
 
 ** Aplicação no Projeto:
 
-*A equação fundamentou a modelagem da complexidade da inserção e foi validada por experimentações práticas.
+* A equação fundamentou a modelagem da complexidade da inserção e foi validada por experimentações práticas.
 
-*Os tempos medidos confirmaram a proporcionalidade com O(log n).
+* Os tempos medidos confirmaram a proporcionalidade com O(log n).
 
-*Os gráficos apresentaram crescimento assintótico logarítmico esperado, confirmando a teoria.
+* Os gráficos apresentaram crescimento assintótico logarítmico esperado, confirmando a teoria.
 
 ---
 
