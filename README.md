@@ -50,9 +50,10 @@ A inserção em uma Red-Black Tree envolve dois passos: busca pela posição (se
   Os dados mostram uma **tendência de crescimento quase linear**, reflexo da baixa constante associada ao fator logarítmico em grandes `n`, confirmando a complexidade **O(log n)**.
   
 ✅ **Cálculo da Altura Máxima da Árvore Red-Black**
+
 A altura de uma árvore Red-Black é no máximo 2 ⋅ log₂(n+1). Esse cálculo fundamenta-se nas propriedades estruturais da árvore e demonstra o balanceamento eficiente que garante a complexidade logarítmica.
 
-*Propriedades Fundamentais:
+* Propriedades Fundamentais:
 
 Altura preta: Todos os caminhos de um nó até suas folhas possuem o mesmo número de nós pretos.
 
@@ -64,7 +65,7 @@ Número mínimo de nós em uma Red-Black Tree:
 O número mínimo de nós (n) para uma altura ℎᵦ é dado por:
 n ≥ 2^hᵦ - 1
 
-*Derivação:
+* Derivação:
 
 Relacionando ℎᵦ com o número de nós (n):
 hᵦ ≤ log₂(n+1)
@@ -72,12 +73,12 @@ hᵦ ≤ log₂(n+1)
 Substituindo ℎᵦ na equação da altura total ℎ:
 h ≤ 2 ⋅ log₂(n+1)
 
-*Conclusão:
+* Conclusão:
 A altura máxima ℎ de uma árvore Red-Black com n nós é:
 h ≤ 2 ⋅ log₂(n+1)
 Essa relação demonstra que a árvore está balanceada, garantindo a eficiência logarítmica nas operações de busca, inserção e remoção.
 
-*Aplicação no Projeto:
+* Aplicação no Projeto:
 
 A equação fundamentou a modelagem da complexidade da inserção e foi validada por experimentações práticas.
 
